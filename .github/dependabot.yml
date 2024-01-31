@@ -1,45 +1,38 @@
 version: 2
 updates:
-  # Maintain dependencies for npm
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-	
-  # Maintain dependencies for maven
-  - package-ecosystem: "maven"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-	
-	
-  # Maintain dependencies for gradle
-  - package-ecosystem: "gradle"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-	
-  # Maintain dependencies for Docker
-  - package-ecosystem: "docker"
-    directory: "/.devcontainer"
-    schedule:
-      interval: "weekly"
-	  open-pull-requests-limit: 5
 
-  # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: npm
+    directory: /
     schedule:
-      interval: "weekly"
-	  open-pull-requests-limit: 5
+      interval: weekly
+    open-pull-requests-limit: 5
 
-  # Maintain dependencies for terraform
-  - package-ecosystem: "terraform"
-    directory: "/"
+  - package-ecosystem: maven
+    directory: /
     schedule:
-      interval: "daily"
-	  open-pull-requests-limit: 5
+      interval: weekly
+    open-pull-requests-limit: 5
 
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: docker
+    directory: /.devcontainer
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+
+  - package-ecosystem: terraform
+    directory: /
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 5
