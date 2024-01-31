@@ -32,8 +32,6 @@ updates:
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
-    registries:
-      - github-smc-workflow
     schedule:
       interval: "weekly"
 	  open-pull-requests-limit: 5
@@ -41,8 +39,6 @@ updates:
   # Maintain dependencies for terraform
   - package-ecosystem: "terraform"
     directory: "/"
-    registries:
-      - github-smc-terraform
     schedule:
       interval: "daily"
 	  open-pull-requests-limit: 5
