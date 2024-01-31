@@ -5,9 +5,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 5 
+    open-pull-requests-limit: 5
 	
-  # Maintain dependencies for maven	
+  # Maintain dependencies for maven
   - package-ecosystem: "maven"
     directory: "/"
     schedule:
@@ -15,7 +15,7 @@ updates:
     open-pull-requests-limit: 5
 	
 	
-  # Maintain dependencies for gradle	
+  # Maintain dependencies for gradle
   - package-ecosystem: "gradle"
     directory: "/"
     schedule:
@@ -27,7 +27,7 @@ updates:
     directory: "/.devcontainer"
     schedule:
       interval: "weekly"
-	  open-pull-requests-limit: 5  
+	  open-pull-requests-limit: 5
 
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
@@ -36,7 +36,7 @@ updates:
       - github-smc-workflow
     schedule:
       interval: "weekly"
-	  open-pull-requests-limit: 5  
+	  open-pull-requests-limit: 5
 
   # Maintain dependencies for terraform
   - package-ecosystem: "terraform"
@@ -45,5 +45,5 @@ updates:
       - github-smc-terraform
     schedule:
       interval: "daily"
-	  open-pull-requests-limit: 5  
+	  open-pull-requests-limit: 5
 
